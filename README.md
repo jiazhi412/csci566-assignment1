@@ -87,20 +87,25 @@ PLEASE USE **PIAZZA** TO POST QUESTIONS (under folder assignment1).
 ## FAQ
 
 - Install `opencv-python` using conda
+
 `requirements.txt` specifies `opencv-python==4.0.0.21` as the recommended version, but it is not available on conda.
 If you are using conda, you can install the latest stable opencv version on conda: https://anaconda.org/tstenner/opencv
 
 - Cannot get 50% accuracy for TinyNet in Problem 1
+
 You can try to vary the batch size, epochs, learning rate, and parameters of fc layers.
 
 - What is a good starting learning rate?
+
 There is a good article: https://medium.com/octavian-ai/which-optimizer-and-learning-rate-should-i-use-for-deep-learning-5acb418f9b2
 
 - Keep getting a constant loss for Problem 2-1
+
 If you are using `slim`, you should be aware of a ReLU layer following the fully connected layer.
 To prevent this happening, you have to set the default activation function of slim's fully connected layer to `None`.
 
 - The zip file to submit is too large
+
 Make sure you do not include your virtual environment, checkpoints, or datasets.
 
 - General debugging tip
